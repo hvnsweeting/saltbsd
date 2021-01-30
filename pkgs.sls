@@ -25,3 +25,13 @@ browser:
     - names:
       - firefox
       - w3m
+
+password_manager:
+  pkg.installed:
+    - names:
+      - keepassxc
+
+ebook_reader:
+  pkg.installed:
+    - names:
+      - calibre
