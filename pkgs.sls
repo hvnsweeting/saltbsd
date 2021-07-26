@@ -4,6 +4,12 @@ tools:
 # TODO: make this work- vim-perl-python3-ruby - emacs
       - git
       - tig
+      - wget
+      - curl
+      - gmake
+      - ripgrep
+      - zip
+      - unzip
 
 programming:
   pkg.installed:
@@ -11,7 +17,16 @@ programming:
       - elixir
       - go
       - python3
+      - pypy
       - racket-minimal
+      - nim
+
+dbs:
+  pkg.installed:
+    - names:
+      - redis
+      - postgresql-client
+      - postgresql-server
 
 desktop:
   pkg.installed:
@@ -19,6 +34,18 @@ desktop:
       - i3
       - scrot
       - feh
+      - xclip
+
+media:
+  pkg.installed:
+    - names:
+      - vlc
+
+office:
+  pkg.installed:
+    - names:
+      - libreoffice
+
 
 browser:
   pkg.installed:
@@ -35,3 +62,9 @@ ebook_reader:
   pkg.installed:
     - names:
       - calibre
+      - zathura-pdf-mupdf
+
+torrent:
+  pkg.installed:
+    - names:
+      - rtorrent
